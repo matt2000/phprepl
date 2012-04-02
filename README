@@ -24,8 +24,21 @@ If you have BASH, just run `phprepl` for the fully featured version.
 
 Otherwise, you can run `php /path/to/phprepl.php`.
 
+Tips:
+- The semi-colon is option for one-line commands.
+- You can run a function that doesn't require arguments with just the function name, e.g. 'phpinfo'.
+- Tab completion of previously used commands is available if you have rlwrap.
+- Just type $var to get print_r($var)
+- The last output variable/return is available as $out. So don't use that variable name yourself in the global scope if you value your sanity.
+- Input code is not validated. It's really easy to crash this shell.
+- Type CTRL-c to quit.
+
+
 ===Drupal Users===
 If you have Drush, you can run `drepl` from a Drupal directory to get a PHP REPL with Drupal fully bootstrapped for you.
+
+Or if installed in a drush commands directory, you can run `drush repl`. (History and Tab Completion not yet implemented via this command.)
+
 
 ==License==
 
