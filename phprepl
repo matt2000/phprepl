@@ -1,0 +1,15 @@
+#!/bin/bash
+path_to='/usr/share/php/phprepl/'
+
+#check for rlwrap
+rlwrap >/dev/null 2>&1
+
+if [ $? -eq 1 ]; then
+  echo "Press CTRL-^ for a multi-line editor. (Set RLWRAP_EDITOR if you don't like the default editor.)";
+  #@todo smart completion instead of lame 'remember'
+  rlwrap --remember --multi-line php "$path_to"phprepl.php $1 $2
+else
+  echo "Can't find rlwrap. Running in suck mode. Install rlwrap for history, tab completion, and multi-line editing.";
+  php "$path_to"phprepl.php
+fi
+

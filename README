@@ -1,0 +1,46 @@
+PHP-REPL
+
+A simple REPL for PHP written in PHP.
+
+==Description==
+
+Developed & tested with PHP 5.3 under Linux.
+
+Works best with BASH and rlwrap.
+
+Advantages over other PHP REPLs:
+- Written in PHP, so no other requirements to run it, and no other skills needed to hack it.
+- Doesn't require PHP to be compiled with readline
+- Works with everything your PHP supports, e.g., auto-loaded classes.
+
+Inspired by http://www.php.net/manual/en/features.commandline.interactive.php#98642
+
+==Installation==
+
+Not required, but if you're running under BASH, you can run `sudo ./install.sh` to install globally for all users.
+
+==Usage==
+If you have BASH, just run `phprepl` for the fully featured version.
+
+Otherwise, you can run `php /path/to/phprepl.php`.
+
+===Drupal Users===
+If you have Drush, you can run `drepl` from a Drupal directory to get a PHP REPL with Drupal fully bootstrapped for you.
+
+==License==
+
+PHP-REPL
+Copyright (C) 2012  Matt Chapman
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License version 2
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#This will throw a fatal error if we're not in a directory where we can bootstrap. @todo Drush has functions for this; we should try to use them.
+drush ev "conf_path()" > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+  phprepl "drepl>" /usr/share/php/phprepl/drepl.php
+else
+  echo "Error. Are you in a directory where Drush can bootstrap?"
+fi
