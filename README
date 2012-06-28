@@ -1,6 +1,6 @@
 PHP-REPL
 
-A simple REPL for PHP written in PHP.
+A simple REPL/Shell for PHP written in PHP.
 
 ==Description==
 
@@ -15,6 +15,8 @@ Advantages over other PHP REPLs:
 
 Inspired by http://www.php.net/manual/en/features.commandline.interactive.php#98642
 
+See also: http://drupal.org/node/600556
+
 ==Installation==
 
 Not required, but if you're running under BASH, you can run `sudo ./install.sh` to install globally for all users.
@@ -25,7 +27,7 @@ If you have BASH, just run `phprepl` for the fully featured version.
 Otherwise, you can run `php /path/to/phprepl.php`.
 
 Tips:
-- The semi-colon is option for one-line commands.
+- The semi-colon is optional for one-line commands.
 - You can run a function that doesn't require arguments with just the function name, e.g. 'phpinfo'.
 - Tab completion of previously used commands is available if you have rlwrap.
 - Just type $var to get print_r($var)
