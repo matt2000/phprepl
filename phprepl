@@ -10,6 +10,6 @@ if [ $? -eq 1 ]; then
   rlwrap --remember --multi-line php "$path_to"phprepl.php $1 $2
 else
   echo "Can't find rlwrap. Running in suck mode. Install rlwrap for history, tab completion, and multi-line editing.";
-  php "$path_to"phprepl.php
+  php "$path_to"phprepl.php $1 $2
 fi
 
