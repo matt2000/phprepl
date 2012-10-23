@@ -105,12 +105,12 @@ while(TRUE) {
     $return = eval($phprepl_in);
     
     if ($echo) {
-      print_r($out);
+      var_export($out);
     } elseif (!empty($return)) {
-        print_r($return);
+        var_export($return);
         $out = $return;
     } elseif ($return !== FALSE) {
-        echo "OK.";
+        echo "\nOK.";
     }
     echo "\n";
   }
